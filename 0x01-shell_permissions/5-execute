@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod 764 /alx-system_engineering-devops/0x01-shell_permissions/hello
+chmod 744 /alx-system_engineering-devops/0x01-shell_permissions/hello
