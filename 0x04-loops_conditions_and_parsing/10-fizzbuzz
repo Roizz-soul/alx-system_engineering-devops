@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# script displays 1 to 100 but for numbers divisible by 3
+# it displays Fizz, for numbers divisible by 5 it displays Buzz and
+# for numbers divisible by both, it displays FizzBuzz
 
 for i in {1..100}
 do
