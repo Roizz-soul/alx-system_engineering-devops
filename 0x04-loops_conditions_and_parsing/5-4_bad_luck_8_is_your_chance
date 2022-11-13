@@ -5,11 +5,17 @@
 i=0
 while [ $i -lt 10 ];
 do
-	if [ $i = 9 ]
+	if [ $i = 3 ]
 	then
-	# if i is 9 print Hi
-		echo "Hi"
-	fi
+	# print bad luck after 4th i
+		echo "bad luck"
+	elif [ $i = 7 ]
+	then
+	# print good luck after 8th i
+		echo "good luck"
+	else
+	# print Best school for the other times
 	echo "Best School"
+	fi
 	((i++))
 done
