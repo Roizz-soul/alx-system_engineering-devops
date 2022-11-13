@@ -7,8 +7,8 @@ while [ $i -lt 10 ];
 do
 	if [ $i = 9 ]
 	then
-# If i is 9 print hi
-		echo "hi"
+# If i is 9 print Hi
+		echo "Hi"
 	fi
 	echo "Best School"
 	((i++))
