@@ -1,4 +1,4 @@
-#!/usr/bin /env bash
+#!/usr/bin/env bash
 # task 101
 
 if [ "$1" == "start" ]
