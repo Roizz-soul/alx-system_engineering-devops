@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# displays a list of currently running processes
+# -a - to show all processes
+# u - user oriented format
+# x - include TTY
+# f - process heirarchy
+
+ps -auxf
