@@ -2,4 +2,5 @@
 # configuring an nginx server to listen to port 80
 
 sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
+sed -i "s/ipv6/ipv4/" /etc/nginx/sites-enabled/default
 service nginx restart
