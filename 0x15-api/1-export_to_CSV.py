@@ -15,7 +15,7 @@ if __name__ == "__main__":
         writer = csv.writer(csvf, quoting=csv.QUOTE_ALL)
         for data in todo_s.json():
             row = ['{}'.format(uid),
-                   '{}'.format(user_s.json()["name"]),
+                   '{}'.format(user_s.json()["username"]),
                    '{}'.format(data["completed"]),
                    '{}'.format(data["title"])]
             writer.writerow(row)
