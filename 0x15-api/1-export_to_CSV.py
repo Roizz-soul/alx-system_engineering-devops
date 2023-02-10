@@ -12,7 +12,7 @@ if __name__ == "__main__":
     todo_s = requests.get(url + 'todos?userId={}'.format(uid))
 
     with open('{}.csv'.format(uid), 'w', newline="") as csvf:
-        writer = csv.writer(csvf)
+        writer = csv.writer(csvf, quoting=csv.QUOTE_ALL)
         for data in todo_s.json():
             row = ['{}'.format(uid),
                    '{}'.format(user_s.json()["name"]),
