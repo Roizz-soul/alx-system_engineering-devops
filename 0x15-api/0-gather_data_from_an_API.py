@@ -20,4 +20,4 @@ if __name__ == "__main__":
                 user_s.json()["name"], i, j))
     for data in todo_s.json():
         if data["completed"] is True:
-            print("\t{}".format(data["title"]))
+            print("\t {}".format(data["title"]))
