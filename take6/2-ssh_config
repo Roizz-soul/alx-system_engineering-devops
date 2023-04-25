@@ -1,0 +1,4 @@
+Host 54.82.178.149
+	User ubuntu
+	IdentityFile ~/.ssh/school
+	GSSAPIAuthentication yes
