@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# configuring an nginx server to listen to port 80 in few lines
+# configuring an nginx server to listen to port 80
 apt-get update -y
 apt-get install curl -y
 sed -i "s/listen 8080/listen 80/" /etc/nginx/sites-enabled/default
