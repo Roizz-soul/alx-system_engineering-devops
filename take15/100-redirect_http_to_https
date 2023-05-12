@@ -17,8 +17,10 @@ defaults
     timeout http-request 10s
 
 frontend Load_Balancer
-    bind *:80
-    bind *:443 ssl crt /etc/haproxy/fullchain.pem
+    mode http
+    bind :80
+    bind :443 ssl crt /etc/haproxy/fullchain.pem
+    http-request redirect scheme https code 301 unless { ssl_fc }
     default_backend myservers
 
 backend myservers

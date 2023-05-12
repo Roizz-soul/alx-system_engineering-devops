@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# A Script to display information about subdomains.
-# It takes two arguments at most
+# Script to display information about subdomains. Takes two arguments
 # Argument 1 is the domain, 2 is the sub domain
 
 func () {
