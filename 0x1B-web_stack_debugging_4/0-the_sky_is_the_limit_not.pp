@@ -1,6 +1,6 @@
 # Increase the limit of open files
 exec { 'fix--for-nginx':
-  command => 'sed -i "3 a\worker_rlimit_nofile 30000;" /etc/nginx/nginx.conf',
+  command => 'sed -i "s/15/4096/" /etc/default/nginx',
   path    => '/usr/local/bin/:/bin/'
 } ->
 
