@@ -23,7 +23,7 @@ def recurse(subreddit, hot_list=[], after="", count=0):
     after = results["after"]
     count += results["dist"]
     for c in results["children"]:
-        hot_list.append(c.["data"]["title"])
+        hot_list.append(c["data"]["title"])
 
     if after is not None:
         return recurse(subreddit, hot_list, after, count)
